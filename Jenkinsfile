@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                echo "hello it's me"
+                sh 'cd api && mvn -s settings.xml -DskipTests install'
             }
         }
     }
