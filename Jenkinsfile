@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    tools {
+        mvn 'MAVEN'
+    }
+
     stages {
         stage("build") {
             steps {
